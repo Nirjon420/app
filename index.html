@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meghumi - Let the clouds sing to you</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Hey dreamer 🌤️<br>তুমি আজ কী শুনতে চাও?</h1>
+    </header>
+
+    <!-- 🔍 Search Bar -->
+    <section class="search-bar">
+      <input type="text" placeholder="গান, শিল্পী, মুড..." id="searchInput"/>
+      <button onclick="searchSong()">Float away</button>
+    </section>
+
+    <!-- 😍 Mood Cards -->
+    <section class="mood-cards">
+      <div class="mood-card">🌧️ Rainy</div>
+      <div class="mood-card">😊 Happy</div>
+      <div class="mood-card">😴 Chill</div>
+      <div class="mood-card">🏋️ Workout</div>
+    </section>
+
+    <!-- 📈 Trending Song -->
+    <section class="trending">
+      <h2>Trending Now</h2>
+      <div class="song-card">
+        <img src="https://img.youtube.com/vi/kXYiU_JCYtU/0.jpg" alt="Thumbnail">
+        <div class="info">
+          <h3>Numb</h3>
+          <p>Linkin Park</p>
+          <button onclick="playSong()">Let it play</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ▶️ YouTube Player -->
+    <section id="youtubePlayer" class="youtube-player hidden">
+      <iframe id="ytFrame" width="100%" height="315"
+        src=""
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <!-- 🎶 Player Bar -->
+    <footer class="player-bar">
+      <p>🎶 Now Playing: <span id="nowPlaying">Nothing yet...</span></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
