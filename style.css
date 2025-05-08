@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #F1FEC6;
+  color: #333;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.search-bar button {
+  background-color: #A882DD;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.mood-cards {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.mood-card {
+  background-color: #ffffffaa;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.trending h2 {
+  margin-bottom: 10px;
+}
+
+.song-card {
+  display: flex;
+  gap: 15px;
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.song-card img {
+  width: 100px;
+  border-radius: 12px;
+}
+
+.song-card .info {
+  flex: 1;
+}
+
+.song-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.song-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.song-card button {
+  background-color: #A882DD;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.player-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #A882DD;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.youtube-player {
+  margin-top: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
